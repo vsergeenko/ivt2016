@@ -1,0 +1,21 @@
+# Last Modified: Thu Dec 24 21:16:43 2015
+#include <tunables/global>
+
+/usr/bin/lftp {
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+
+  /etc/inputrc r,
+  /etc/lftp.conf r,
+  @{HOME}/ r,
+  @{HOME}/.lftp/cwd_history rwk,
+  @{HOME}/.lftp/rl_history rw,
+  @{HOME}/.lftp/transfer_log w,
+  @{HOME}/[^.]* rw,
+  @{HOME}/[^.]** rw,
+  @{HOME}/[^.]*/* rw,
+  @{HOME}/[^.]*/** rw,
+
+  /usr/bin/lftp mr,
+
+}
