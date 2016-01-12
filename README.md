@@ -8,3 +8,5 @@
 * Lab 2
   + [click here](https://github.com/vsergeenko/ivt2016/tree/master/lab2)  
 
+* Lab 3
+  + [click here](https://github.com/vsergeenko/ivt2016/tree/master/lab3)  
